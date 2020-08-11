@@ -1,0 +1,49 @@
+.main_body {
+  display: table;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  border-radius: 0.25rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.head {
+  display: table-row;
+  background-color: #f7f8fa;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.row {
+  display: table-row;
+}
+
+.row:nth-child(even) {
+  background-color: white;
+}
+
+.blog_details {
+  height: 10rem;
+}
+
+.head-cell {
+  display: table-cell;
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+
+.image {
+  max-width: 10rem;
+}
+
+a {
+  color: grey;
+}
+
+.addButton {
+  text-align: center;
+}
+
+.addNew {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}

@@ -1,0 +1,49 @@
+<div class="main-page">
+  <div class="article">
+    <h1 class="title">{{ article.title }}</h1>
+    <div class="author_date">
+      <h2>{{ article.author }}</h2>
+      <h2>&nbsp;posted on&nbsp;</h2>
+      <h2>{{ article.date }}</h2>
+    </div>
+    <div class="image_block">
+      <img class="image" [src]="article.image" />
+    </div>
+    <P [innerHTML]="article.content" class="content"></P>
+  </div>
+
+  <div class="side_bar">
+    <h2>Other related articles</h2>
+    <div *ngFor="let article of articleList">
+      <div class="blog_card">
+        <div class="blog_card_detail">
+          <div class="blog_card_detail_left">
+            <img [src]="article.image" class="blog_card_detail_image" />
+          </div>
+          <div class="blog_card_detail_right">
+            <h3 class="blog_card_detail_title">
+              {{ article.title }}
+            </h3>
+            <h4 class="blog_card_detail_author">
+              {{ article.author }}
+            </h4>
+            <h4>
+              {{ article.date }}
+            </h4>
+
+            <!-- <div class = "blog_card_detail_type">
+                      {{ article.type }}
+                  </div> -->
+            <a routerLink="/{{ article.id }}" class="blog_card_detail_readmore">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="return">
+  <a class="btn" routerLink="/articles">Back to the HOME PAGE</a>
+</div>

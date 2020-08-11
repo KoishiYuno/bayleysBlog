@@ -1,0 +1,38 @@
+<div class="addButton">
+  <button mat-button class="addNew" routerLink="../addNew">
+    Add a new article
+  </button>
+</div>
+<div class="main_body">
+  <div>
+    <div class="head">
+      <div class="head-cell">title</div>
+      <div class="head-cell">author</div>
+      <div class="head-cell">date</div>
+      <div class="head-cell">Views</div>
+    </div>
+    <div class="row" *ngFor="let article of Articles">
+      <div class="blog">
+        <div class="head-cell blog_details">
+          <img [src]="article.image" class="image" />
+        </div>
+        <div class="head-cell blog_details">
+          <a routerLink="../{{ article.id }}">{{ article.title }}</a>
+        </div>
+      </div>
+      <div class="head-cell blog_details">{{ article.author }}</div>
+      <div class="head-cell blog_details">{{ article.date }}</div>
+      <div class="head-cell blog_details">{{ article.view }}</div>
+      <a routerLink="../admin/{{ article.id }}" class="head-cell blog_details"
+        >edit</a
+      >
+      <a
+        routerLink="../admin"
+        class="head-cell blog_details delete"
+        (click)="openDialog(article.id)"
+        >delete</a
+      >
+      <hr />
+    </div>
+  </div>
+</div>

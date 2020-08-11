@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="form-group search_bar">
+    <input
+      type="input"
+      name="search_blog"
+      class="form-control search_input"
+      placeholder="Search an article by title"
+    />
+    <button
+      (click)="goToPage()"
+      type="submit"
+      class="btn btn-primary search_button"
+      name="submit"
+      value="Search"
+    >
+      Search
+    </button>
+  </div>
+</div>
+
+<div class="article_list">
+  <div *ngFor="let article of Articles" class="main-body">
+    <div class="blog_card shadow-sm">
+      <a routerLink="/{{ article.id }}" class="blog_card_detail">
+        <div class="blog_card_detail_left">
+          <img [src]="article.image" class="blog_card_detail_image" />
+        </div>
+        <div class="blog_card_detail_right">
+          <div>
+            <h3 class="blog_card_detail_title">
+              {{ article.title }}
+            </h3>
+            <h4 class="blog_card_detail_author">
+              {{ article.author }} &nbsp; posted in &nbsp;
+              {{ article.date }}
+            </h4>
+            <!-- <div class = "blog_card_detail_type">
+                      {{ article.type }}
+                  </div> -->
+            <p class="blog_card_detail_description">
+              {{ article.description }}
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="bottom">
+  <div class="pagination">
+    <div *ngFor="let page of pageList" class="pagination">
+      <a href="articles/{{ page }}" id="{{ page }}">{{ page }}</a>
+    </div>
+  </div>
+</div>

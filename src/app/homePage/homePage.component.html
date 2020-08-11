@@ -1,0 +1,43 @@
+<div class="main-home">
+  <div class="image_block_home">
+    <img src="../../assets/home.webp" class="home_image" />
+  </div>
+
+  <div class="title">
+    <div>
+      <h1 class="title_text">Read our most popular articles</h1>
+    </div>
+    <div class="title_to_all">
+      <h1 class="title_sub_text">Or go through all articles</h1>
+      <a href="articles" class="to_all_articles">All &nbsp;articles</a>
+    </div>
+  </div>
+
+  <div class="popular_articles">
+    <a
+      routerLink="/{{ article.id }}"
+      *ngFor="let article of Articles"
+      class="blog_card shadow-sm"
+    >
+      <div class="image_block">
+        <img [src]="article.image" class="blog_card_image" />
+      </div>
+      <div class="blog_card_content">
+        <div>
+          <h3 class="blog_card_title">
+            {{ article.title }}
+          </h3>
+          <h4 class="blog_card_author">
+            {{ article.author }}&nbsp;posted in&nbsp;{{ article.date }}
+          </h4>
+          <!-- <div class = "blog_card_type">
+                          {{ article.type }}
+                      </div> -->
+          <p class="blog_card_description">
+            {{ article.description }}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

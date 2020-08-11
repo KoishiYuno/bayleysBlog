@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="form-group search_bar">
+    <div class="property">
+      <label>Username</label>
+      <input
+        [(ngModel)]="username"
+        type="input"
+        name="search_blog"
+        class="form-control search_input"
+        placeholder="Enter Your Username"
+      />
+    </div>
+
+    <div class="property">
+      <label>Password</label>
+      <input
+        [(ngModel)]="password"
+        type="password"
+        name="search_blog"
+        class="form-control search_input"
+        placeholder="Enter Your Password"
+      />
+    </div>
+
+    <div class="property center">
+      <button
+        (click)="login()"
+        type="submit"
+        class="btn btn-primary"
+        name="submit"
+        value="Search"
+      >
+        Login
+      </button>
+    </div>
+  </div>
+</div>

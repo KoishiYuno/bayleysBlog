@@ -1,0 +1,82 @@
+header {
+  max-width: 1400px;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  position: fixed;
+  border: 1px solid #f4f4f4;
+}
+
+.main-header {
+  padding: 2rem;
+  padding-left: 0.5rem;
+}
+
+.logo {
+  left: 0%;
+}
+
+.navigation {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #5d54545e;
+  margin-right: 2rem;
+
+  transition: all 0.2s;
+}
+
+.navigation a:visited,
+.navigation a:active,
+.navigation a:focus {
+  text-decoration: none;
+  color: #2d28285e;
+}
+
+.navigation a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    min-height: 5.5rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .navigation {
+    min-height: 4rem;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .navigation {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .navigation a {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation a {
+    margin-right: 1rem;
+  }
+
+  .img_logo {
+    height: 2rem;
+  }
+
+  .navigation {
+    font-size: 0.5rem;
+  }
+}

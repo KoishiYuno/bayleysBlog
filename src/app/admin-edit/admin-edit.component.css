@@ -1,0 +1,44 @@
+.wrapper {
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.property {
+  margin-top: 0.8rem;
+}
+
+img {
+  margin-top: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid grey;
+  margin: 2px;
+  text-indent: 2px;
+  width: 100%;
+}
+
+textarea {
+  height: 50rem;
+  margin: 0px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 1rem;
+  line-height: 1.5rem;
+  resize: auto;
+}
+
+.description {
+  height: 20rem;
+}
+
+.btns {
+  text-align: right;
+}
+
+.btn {
+  margin: 0.5rem;
+}

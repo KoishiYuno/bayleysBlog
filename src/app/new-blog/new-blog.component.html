@@ -1,0 +1,54 @@
+<div class="wrapper">
+  <div class="property">
+    <label>Title</label>
+    <input
+      type="text"
+      placeholder="Enter the article title"
+      [(ngModel)]="article.title"
+    />
+  </div>
+  <div class="property">
+    <label>Author</label>
+    <input type="text" [(ngModel)]="article.author" />
+  </div>
+  <div class="property">
+    <label>Type</label>
+    <input type="text" [(ngModel)]="article.type" />
+  </div>
+  <div class="image">
+    <label>image</label>
+    <input type="text" [(ngModel)]="article.image" />
+    <img [src]="article.image" class="blog_image" />
+  </div>
+  <div class="property">
+    <label>Description</label>
+    <textarea
+      type="text"
+      [(ngModel)]="article.description"
+      class="description"
+    ></textarea>
+  </div>
+  <div class="property">
+    <label>Content</label>
+    <textarea type="text" [(ngModel)]="article.content"></textarea>
+  </div>
+</div>
+
+<div class="btns">
+  <button
+    type="submit"
+    class="btn btn-primary update_button"
+    name="submit"
+    (click)="checkUpdate()"
+  >
+    Create
+  </button>
+  <button
+    type="submit"
+    class="btn btn-primary cancel_button"
+    name="submit"
+    (click)="goToPage()"
+  >
+    Cancel
+  </button>
+</div>

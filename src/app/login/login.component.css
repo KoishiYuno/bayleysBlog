@@ -1,0 +1,55 @@
+.container {
+  height: 73.8vh;
+}
+
+.form-group {
+  margin-top: 7rem;
+}
+
+.property {
+  padding: 1rem;
+  margin: auto;
+  width: 50%;
+}
+
+input {
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  width: 8rem;
+  height: 3rem;
+}
+
+@media screen and (max-width: 766px) {
+  .property {
+    width: 100%;
+  }
+  .form-group {
+    margin-top: 2rem;
+  }
+  .container {
+    height: 71vh;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 767px) {
+  .property {
+    width: 80%;
+  }
+  .form-group {
+    margin-top: 5rem;
+  }
+  .container {
+    height: 71vh;
+  }
+}

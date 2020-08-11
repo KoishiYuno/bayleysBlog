@@ -1,0 +1,66 @@
+<header>
+  <!-- <div class="main-header">
+    <a class="logo" href="https://www.bayleys.co.nz">
+      <img
+        src="../../assets/Capture.PNG"
+        alt="logo"
+        class="img_logo"
+        href="https://www.bayleys.co.nz/"
+      />
+    </a>
+    <nav class="navigation">
+      <a routerLink="home">Home</a>
+      <a routerLink="articles">All&nbsp;articles</a>
+      <a routerLink="about">About</a>
+      <a routerLink="{{ path }}" class="login">Login</a>
+      <a routerLink="admin">Admin</a>
+    </nav>
+  </div> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="logo" href="https://www.bayleys.co.nz">
+      <img
+        src="../../assets/Capture.PNG"
+        alt="logo"
+        class="img_logo"
+        href="https://www.bayleys.co.nz/"
+      />
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item navigation">
+          <a class="nav-link" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item navigation">
+          <a class="nav-link" routerLink="articles">All&nbsp;articles</a>
+        </li>
+        <li class="nav-item navigation">
+          <a class="nav-link" routerLink="about">About</a>
+        </li>
+        <li class="nav-item navigation">
+          <a class="nav-link" routerLink="{{ path }}" (click)="checkPath()"
+            >Login</a
+          >
+        </li>
+        <li class="nav-item navigation">
+          <a class="nav-link" routerLink="admin">Admin</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<br />
+<br />

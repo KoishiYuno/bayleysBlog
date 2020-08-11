@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+  border: 0;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1400px;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+}
